@@ -1,0 +1,89 @@
+body{
+    background-image: url(../images/role/back.jpg);
+    background-size: cover;
+    padding: 0px;
+    margin: 0px;
+    background-attachment: fixed;
+    
+
+}
+
+.role_bottom{
+    width: 100vw;
+    height: 30vh;
+    background: black;
+    color: grey;
+    text-align: center;
+    position: absolute;
+    top: 100vh;
+}
+.select_div {
+    width: 100vw;
+    height: 20vw;
+    line-height: 20vh;
+    position: absolute;
+    top: 80vh;
+    background-color: rgba(255, 255, 255,0.3);
+    text-align: center;
+    z-index: 3;
+}
+
+.left_arrow,.right_arrow{
+    width: 48px;
+    height: 54px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.avartar{
+    width: 100px;
+    height: 110px;
+    border-radius: 10px;
+
+    display: inline-block;
+    vertical-align: middle;
+    background: rgba(6, 6, 6, 0.5);
+    margin: 0px 20px;
+    box-sizing: border-box;
+}
+
+.avartar:hover{
+    border: 2px solid white;
+    box-shadow: 0px 0px 50px gold;
+}
+
+.selected {
+    border: 2px solid white;
+    box-shadow: 0px 0px 50px gold;
+}
+
+.intro_div{
+    width: 500px;
+    height: 180px;
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    z-index: 3;
+    color: white;
+    font-size: 18px;
+    padding: 20px;
+    
+}
+
+.role_div {
+    width: 50vw;
+    height: calc(100vh - 100px);
+    /* background: ghostwhite; */
+    position: absolute;
+    left: 50%;
+    z-index: 2;
+}
+
+.role_div img{
+    position: absolute;
+    top: 20vh;
+    height: 90%;
+    /* position: absolute;
+    top: 20%;
+    width: 100%; */
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>角色界面</title>
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/role.css" />
+  </head>
+  <body>
+    <div class="top_nav">
+      <img src="images/logo.webp" />
+      <ul>
+        <a href="index.html"><li>首页</li></a>
+        <a href="role.html"><li class="active">角色</li></a>
+        <a href="liptpyes.love"><li>主页</li></a>
+        <a href=""><li>世界</li></a>
+        <a href=""><li>源码</li></a>
+      </ul>
+    </div>
+    <div class="intro_div"></div>
+    <div class="role_div">
+      <img class="role_img" src="images/role/那维莱特 2.webp" />
+    </div>
+    <div class="select_div">
+      <img src="images/role/左.webp" class="left_arrow" />
+      <img src="images/role/那维莱特.webp" class="avartar" />
+      <img src="images/role/胡桃.webp" class="avartar" />
+      <img src="images/role/莱欧斯利.webp" class="avartar" />
+      <img src="images/role/温迪.webp" class="avartar" />
+      <img src="images/role/右.webp" class="right_arrow" />
+    </div>
+    <div class="role_bottom">
+      <div>
+        <span>关于本站</span>
+        <span>| 网站招聘</span>
+        <span>| 联系我们</span>
+        <span>| 玩家投稿</span>
+        <span>| 游戏截图</span>
+        <span>| 手机客户端</span>
+      </div>
+      <div>COPY-RIGHT@2021-2099</div>
+      <div>email: xxxxxx@email.com.cn</div>
+      <img src="images/logo.webp" />
+    </div>
+  </body>
+  <script src="js/role.js"></script>
+
+  <script type="text/javascript">
+    var cur_index = 1;
+    change(cur_index);
+    $(".avartar").each(function (index, e) {
+      $(this).attr("src", avatar_arr[index]);
+      $(this).click(function () {
+        cur_index = index;
+        change(cur_index);
+      });
+    });
+    $(".left_arrow").click(function () {
+      if (cur_index > 0) {
+        cur_index = cur_index - 1;
+        change(cur_index);
+      }
+    });
+    $(".right_arrow").click(function () {
+      if (cur_index < 3) {
+        cur_index = cur_index + 1;
+        change(cur_index);
+      }
+    });
+    function change(cur_index) {
+      $(".selected").removeClass("selected");
+      $(".role_img").attr("src", img_arr[cur_index]);
+      $(".intro_div").html(intro_arr[cur_index]);
+      $(".avartar:eq(" + cur_index + ")").addClass("selected");
+    }
+  </script>
+</html>

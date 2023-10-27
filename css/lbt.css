@@ -1,0 +1,101 @@
+/* * {
+    margin: 0px;
+    padding: 0px;
+  } */
+  body {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(#1d2b46,#4f4266);
+  }
+  .middle {
+    position: relative;
+  }
+  .out {
+    height: 500px;
+    width: 1200px;
+    position: absolute;
+    margin: 0 auto;
+    left: 320px;
+    top: 220px;
+  }
+  
+  .inner {
+    width: 100%;
+    height: 100%;
+  }
+  .img_1 {
+
+    width: 862px;
+    height: 485px;
+    position: absolute;
+    transition: 0.3s;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  .arrow {
+    font-size: 34px;
+  }
+  .arrow i {
+    position: absolute;
+    color: #fff;
+    z-index: 9999;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .left {
+    left: 0;
+  }
+  .right {
+    right: 0;
+  }
+  .button_1 {
+    width: 175px;
+    height: 15px;
+    position: absolute;
+    z-index: 9999;
+    left: 55%;
+    transform: translateX(-50%);
+  }
+  .button_1 p {
+    width: 15px;
+    height: 15px;
+    float: left;
+    margin: 0 5px;
+    cursor: pointer;
+    background-color: silver;
+  }
+  
+  .button_1 p:first-child {
+    background-color: rgb(20,134,187);
+  }
+  
+  /* 设置id样式 */
+  #last {
+    transform: translateX(0);
+    z-index: 9;
+    opacity: 1;
+  }
+  #first {
+    transform: translateX(200px) scale(1.3);
+    z-index: 99;
+    opacity: 1;
+  }
+  #second {
+    transform: translateX(400px);
+    z-index: 9;
+    opacity: 1;
+  }
+  #left {
+    transform: translateX(-100px);
+    z-index: 1;
+    opacity: 0;
+  }
+  #right {
+    transform: translateX(500px);
+    z-index: 1;
+    opacity: 0;
+  }
+  
